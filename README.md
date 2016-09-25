@@ -12,6 +12,7 @@ Some other files need to be changed according to your need, such as .xml manifes
 ## Quick Start
 Assuming you've already read / know information in this README, here are the steps needed in order to get up and running. 
 If you are in doubt or not debugging locally on Windows read the rest of this document.
+
 1. Create .PFX certificate file from existing localhost certificate (IISExpress), with a pass phrase/password.
 2. Copy .PFX file to **`./server/SecretsAndCerts`** and update `pfx` and `passphrase` properties of **`./server/config.json`** file with file name and pass phrase.
 3. Install dependencies both on server project and client-side.
@@ -42,8 +43,6 @@ If you are in doubt or not debugging locally on Windows read the rest of this do
 Server side and client side projects are separate, meaning you can run each on their own.
 However, client side project runs on http, since Office Add-ins require SSL protected connection and running client-side project on its own won't do much good for local development. 
 If you'll debug your add-in using **Office 365** or you have a server on the Internet with https connection, you can work only with **client-side** project.
-
-***Anyone who knows how to make Webpack starter Angular2 project compatible with local SSL enabled server solution here, you are welcome to fork.***
 
 One other reason why I didn't merge two project is, in case I (you) decide in the future to do more than just serving SSL protected content and do CRUD ops with 3rd party server/service.
 Not all scenarios let you work with client-side code only, so you may want to make your server-side code be more involved.
@@ -123,5 +122,5 @@ Here are some important links
 * [How to trust the IIS Express Self-Signed Certificate](https://blogs.msdn.microsoft.com/robert_mcmurray/2013/11/15/how-to-trust-the-iis-express-self-signed-certificate/)
 * [Make your own SSL Certificate for testing and learning](https://blogs.msdn.microsoft.com/benjaminperkins/2014/05/05/make-your-own-ssl-certificate-for-testing-and-learning/)
 * [Creating a Secure (TLS) Node.js MVC Application](https://shellmonger.com/2015/07/08/creating-a-secure-node-mvc-application/)
-* [F12Chooser: Amazing New Tool for WinForms Application Hosting Web Browser Control](hhttps://blogs.technet.microsoft.com/prakashpatel/2015/11/04/vs2015-remote-debugging-javascript-part-3-f12chooser/)
+* [F12Chooser: Amazing New Tool for WinForms Application Hosting Web Browser Control](https://blogs.technet.microsoft.com/prakashpatel/2015/11/04/vs2015-remote-debugging-javascript-part-3-f12chooser/)
 * [Building an Office add-in with Angular 2 sample in C#, Bash/shell for Visual Studio 2015](https://code.msdn.microsoft.com/office/building-an-office-add-in-a9d506cd)
