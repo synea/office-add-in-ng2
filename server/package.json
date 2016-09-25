@@ -1,0 +1,23 @@
+{
+  "name": "office-addin-ng2-starter-server",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "postinstall": "typings install"
+  },
+  "description": "Office Add-in starter project (server side), to begin add-in development.",
+  "author": {
+    "name": "Bogac Guven",
+    "email": "bogac@synea.io"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0",
+    "debug": "^2.2.0",
+    "hbs": "^4.0.1",
+    "compression": "^1.6.2"
+  }
+}

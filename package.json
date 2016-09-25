@@ -1,0 +1,21 @@
+{
+  "name": "office-addin-ng2",
+  "version": "0.5.0",
+  "description": "Office Add-in starter project with Angular 2 & Express 4",
+  "author": {
+    "name": "Bogac Guven",
+    "email": "bogac@synea.io"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/synea/office-add-in-ng2#readme",
+  "keywords": [
+    "angular2",
+    "angular",
+    "office",
+    "office add-in",
+    "excel",
+    "word",
+    "webpack",
+    "office.js"
+  ]  
+}

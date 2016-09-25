@@ -1,0 +1,16 @@
+﻿#!/usr/bin/env node
+var debug = require('debug')('server');
+var fs = require('fs'),
+    https = require('https'),
+    app = require('../app'),
+    config = require('../config.json');
+ 
+app.set('port', process.env.PORT || config.port || 3000);
+ 
+console.log("Loading PFX File");
+var pfxFile = config.https.pfx;
+console.log(pfxFile);
+config.https.pfx = fs.readFileSync(pfxFile);
+ 
+console.log("Starting Server");
+var server = https.createServer(config.https, app).listen(app.get('port'), config.host);

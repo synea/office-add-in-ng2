@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.map": true
+    },
+    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1200
+    //If getting warning about typescript miss-match, use below property
+    //"typescript.tsdk": "C:\\Users\\your_user_name\\AppData\\Roaming\\npm\\node_modules\\typescript\\lib"
+}
