@@ -32,7 +32,7 @@ If you are in doubt or not debugging locally on Windows read the rest of this do
 ## Selected Technologies
 
 * **Angular 2** w. Webpack as in official docs [WEBPACK: AN INTRODUCTION](https://angular.io/docs/ts/latest/guide/webpack.html)
-* **Office Add-in** A simple Excel one.
+* **Office Add-in** A simple Excel one. API v1.1 (Office 2016).
 * **SSL Certificate** IISExpress generated localhost certificate used (more on that below)
 * **Express 4** To test it locally we need a server, Express 4 is selected due to future upgrades and SSL compatibility
 * **Add-in Manifest File** Kept very simple, can include more use-cases (like Commands) in the future.
